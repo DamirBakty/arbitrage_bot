@@ -69,8 +69,8 @@ def get_text_messages(message):
                 for coin_data1 in res1[key]:
                     try:
                         for coin_data2 in res2[key]:
-                            if (coin_data1['currency'] == coin_data2['currency'] and coin_data1['price'] > 5 * coin_data2['price']) \
-                                    or (coin_data1['currency'] == coin_data2['currency'] and coin_data2['price'] > 5 * coin_data1['price']):
+                            if (coin_data1['currency'] == coin_data2['currency'] and coin_data1['price'] > 1.1 * coin_data2['price']) \
+                                    or (coin_data1['currency'] == coin_data2['currency'] and coin_data2['price'] > 1.1 * coin_data1['price']):
                                 symbol1 = "quoteSymbol: " + coin_data1['quoteSymbol']
                                 symbol2 = "quoteSymbol: " + coin_data2['quoteSymbol']
                                 currency1 = "Currency: " + coin_data1['currency']
